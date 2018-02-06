@@ -16,10 +16,11 @@
     Choisir un questionnaire:
     <c:forEach var="qcm" items="${listeQcm}" >
         <option>
-        <a href="/run?action=lancerQcm&idQuestionnaire=${qcm.idQuestionnaire}">
+        <a href="/run?action=lancerQcm&idQuestion=${qcm.idQuestionnaire}">
            ${qcm.libelleQuestionnaire}
         </a>
     </c:forEach>
     <br>
 </body>
 </html>
+

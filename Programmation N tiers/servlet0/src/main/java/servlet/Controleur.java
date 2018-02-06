@@ -2,9 +2,10 @@ package servlet;
 
 import facade.GestionQCM;
 import facade.QCMImpl;
+import modele.CorrectionQuestion;
+import modele.QuestionReponse;
 import modele.Questionnaire;
-import modele.exceptions.InformationsSaisiesIncoherentesException;
-import modele.exceptions.UtilisateurDejaConnecteException;
+import modele.exceptions.*;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
@@ -43,23 +44,19 @@ public class Controleur extends HttpServlet {
             case "connect":
                 String login = req.getParameter("login");
                 String password = req.getParameter("password");
+                Integer idQuestionnaire;
                 try {
                     facade.connexion(login,password);
                     req.getSession(true).setAttribute("currentuser",login);
-                    //aller au menu
                     req.getRequestDispatcher("/WEB-INF/views/menu.html").forward(req,resp);
                 } catch (UtilisateurDejaConnecteException e) {
-                    //aller au menu
                     req.getRequestDispatcher("/WEB-INF/views/menu.html").forward(req,resp);
                 } catch (InformationsSaisiesIncoherentesException e) {
-                    //aller à la page de login
-                    //ajout parametre de la session
                     req.getSession().setAttribute("message","Erreur! Login ou password incorrect");
                     req.getRequestDispatcher("/WEB-INF/views/login.jsp").forward(req,resp);
                 }
                 break;
             case "choixQCM":
-                //Obtenir la liste des questionnaires pour l'utilisateur actuel
                 String currentuser = (String)req.getSession(true).getAttribute("currentuser");
                 Collection<Questionnaire> listeQcm = facade.getListQuestionnairesNonFaits(currentuser);
                 req.setAttribute("listeQcm",listeQcm);
@@ -67,12 +64,59 @@ public class Controleur extends HttpServlet {
                 break;
             case "lancerQcm":
                 login = (String)req.getSession().getAttribute("currentuser");
-                int idQuestionnaire = Integer.valueOf(((Questionnaire)req.getSession().getAttribute("idQuestionnaire"));
-                int idQuestion = Integer.parseInt(req.getParameter("idQuestion"));
-                facade.validerQuestion(login,idQuestion,reponse);
+                idQuestionnaire = Integer.parseInt(req.getParameter("idQuestion"));
+
+                try {
+                    facade.choixQuestionnaire(login,idQuestionnaire);
+                    Questionnaire q = facade.getQuestionnaireById(login,idQuestionnaire);
+                    req.getSession().setAttribute("questionnaireEnCours",q);
+
+                    if(facade.hasNext(login,idQuestionnaire)){
+                        //lancer le .jsp four aficher la question
+                        QuestionReponse qr = facade.next(login,idQuestionnaire);
+                        req.setAttribute("laQuestion",qr);
+                        req.getRequestDispatcher("/WEB-INF/views/question.jsp").forward(req,resp);
+                    }
+
+                } catch (QuestionnaireEnCoursNonTermineException e) {
+                    e.printStackTrace();
+                }
+
                 break;
+            case "repondreQuestion":
+                //valider la reponse de utilisateur et passer à la suivante
+                //si c'est possible
+                login = (String)req.getSession().getAttribute("currentuser");
+                idQuestionnaire = ((Questionnaire)req.getSession().getAttribute("questionnaireEnCours")).getIdQuestionnaire();
+                int idQuest = Integer.parseInt(req.getParameter("idQuest"));
+                String rep = req.getParameter("reponse"); //NULL si pas de reponse
 
+                facade.validerQuestion(login,idQuest,rep);
 
+                if(facade.hasNext(login,idQuestionnaire)){
+
+                    QuestionReponse qr = facade.next(login,idQuestionnaire);
+                    req.setAttribute("laQuestion",qr);
+                    req.getRequestDispatcher("/WEB-INF/views/question.jsp").forward(req,resp);
+
+                }else{ //le QCM est terminé
+                    try {
+                        double score = facade.validerQuestionnaire(login);
+                        String libelle = ((Questionnaire)req.getSession().getAttribute("questionnaireEnCours")).getLibelleQuestionnaire();
+                        req.getSession().removeAttribute("questionnaireEnCours");
+                        req.setAttribute("libelle",libelle);
+                        req.setAttribute("score",score);
+                        req.getRequestDispatcher("/WEB-INF/views/resultat.jsp").forward(req,resp);
+
+                    } catch (ValidationQuestionnaireException e) {
+                        e.printStackTrace();
+                    }
+
+                }
+                break;
+            case "historique":
+                login = (String)req.getSession().getAttribute("currentuser");
+                facade.getListQuestionnairesFaits(login);
             default:
                 break;
 

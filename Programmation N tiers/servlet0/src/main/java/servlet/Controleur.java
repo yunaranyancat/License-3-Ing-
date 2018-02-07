@@ -114,7 +114,7 @@ public class Controleur extends HttpServlet {
 
                 }
                 break;
-            case "historique":
+            case "historique": //liste
                 login = (String)req.getSession().getAttribute("currentuser");
                 facade.getListQuestionnairesFaits(login);
             default:

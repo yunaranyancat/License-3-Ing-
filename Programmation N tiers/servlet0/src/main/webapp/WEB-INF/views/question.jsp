@@ -17,13 +17,9 @@
 <h1>${laQuestion.question}</h1>
 <form action="/run?action=repondreQuestion" method="post">
 <c:forEach items="${laQuestion.reponsesPossibles}" var="rep">
-    <input type="hidden" name="idQuest" value="${laQuestion.idQuestion}">
+    <input type="hidden" name="idQuestion" value="${laQuestion.idQuestion}">
     <input type="radio" name="reponse" id="${rep}">${rep}<br>
 </c:forEach>
     <input type="submit" value="Repondre">
-<c:if test="${!empty erreur}">
-    <p>${erreur}</p>
-</c:if>
-</form>
 </body>
 </html>

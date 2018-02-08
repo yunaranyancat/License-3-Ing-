@@ -64,7 +64,7 @@ public class Controleur extends HttpServlet {
                 break;
             case "lancerQcm":
                 login = (String)req.getSession().getAttribute("currentuser");
-                idQuestionnaire = Integer.parseInt(req.getParameter("idQuestion"));
+                idQuestionnaire = Integer.parseInt(req.getParameter("idQuestionnaire"));
 
                 try {
                     facade.choixQuestionnaire(login,idQuestionnaire);
@@ -84,17 +84,13 @@ public class Controleur extends HttpServlet {
 
                 break;
             case "repondreQuestion":
-                //valider la reponse de utilisateur et passer à la suivante
-                //si c'est possible
                 login = (String)req.getSession().getAttribute("currentuser");
                 idQuestionnaire = ((Questionnaire)req.getSession().getAttribute("questionnaireEnCours")).getIdQuestionnaire();
-                int idQuest = Integer.parseInt(req.getParameter("idQuest"));
-                String rep = req.getParameter("reponse"); //NULL si pas de reponse
-
-                facade.validerQuestion(login,idQuest,rep);
+                int idQuestion = Integer.parseInt(req.getParameter("idQuestion"));
+                String rep = req.getParameter("reponse");
+                facade.validerQuestion(login,idQuestion,rep);
 
                 if(facade.hasNext(login,idQuestionnaire)){
-
                     QuestionReponse qr = facade.next(login,idQuestionnaire);
                     req.setAttribute("laQuestion",qr);
                     req.getRequestDispatcher("/WEB-INF/views/question.jsp").forward(req,resp);

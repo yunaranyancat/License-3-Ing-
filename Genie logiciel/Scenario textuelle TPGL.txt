@@ -1,0 +1,49 @@
+Description textuelle de "Creer une proposition de vente"
+Scénario nominal:
+2. Le vendeur saisit les informations de client.
+3. Le vendeur saisit les informations selon le vehicule choisi par le cliet.
+4. Le système fait la recherche dans sa base de données.
+5. Le système affiche les informations de vehicules de la même type.
+6. Le vendeur a choisi un vehicule neuf.
+7. Le système ameliorer sa recherche.
+8. Le vendeur selectionne un vehicule.
+9. Le système affiche la proposition complète.
+10. Le vendeur valide la proposition.
+
+Extensions :
+3.a. Le client est déjà dans la proposition de vente.
+  b. Include "Modifier proposition"
+
+4.a La base de données est hors ligne.
+
+//
+**CORRECTION**
+1. le client fait unde demande aupres du vendeur pour l'achat d'un vehicule
+2. le vendeur demande à creer unde proposition de vente
+3. le sys. demande les infos du client
+4. le vendeur renseigne le nom et le prenom du client
+5. le systeme recherche les clients ayant ce nom et prenom et les affice
+6. le vendeur selectionne un client
+7. le syst demande le modele de vehicule et s'il agit un v neuf ou d'occ
+8. le vendeur choisit le modele et le type de v
+9. le syst affiche les v correspondant au choix du vendeur
+10. le vendeur selectionne un v.
+11. le syst calcule le prix et affiche la proposition.
+12. le vendeur valide la proposition
+13. le syst enregistre la proposition
+14. le vendeur demande limpression de ma proposition
+15. le systeme imprime la proposition
+
+Extension:
+5a. le systeme ne trouve aucun client enregistre
+   1- le systeme demande les infos pour enregistrer le client(addr,tel)
+   2- le vendeur renseigne les infos
+   3 - le systeme enregitre le client
+    3a. tous les champs obligatoires ne sont pas renseignés.
+        1 le systeme affiche un message et revient au point 1
+
+9a. le systeme ne trouve auucn vehicule neuf correspondant au modele
+  1. le scenario se pursusit au point 11 du scenario nominal
+
+9b. le systeme ne trouve aucun vehicule d'occassion correpondant au modele
+   1. le systeme affiche un message

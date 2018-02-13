@@ -1,7 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f4e6e6ff-a377-4a86-bd8d-665ce6602a25" name="Default" comment="" />
+    <list default="true" id="c67cd329-d5ee-4c7f-83dd-ab4c13ae41e8" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/../Struts2/.idea/.name" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../Struts2/.idea/artifacts/Struts2_war.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../Struts2/.idea/artifacts/Struts2_war_exploded.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../Struts2/.idea/compiler.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../Struts2/.idea/encodings.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../Struts2/.idea/libraries/Maven__commons_fileupload_commons_fileupload_1_3_3.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../Struts2/.idea/libraries/Maven__commons_io_commons_io_2_5.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../Struts2/.idea/libraries/Maven__fr_miage_orleans_tp_modeleQCM_1_0_SNAPSHOT.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../Struts2/.idea/libraries/Maven__javax_servlet_jstl_1_2.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../Struts2/.idea/libraries/Maven__ognl_ognl_3_1_15.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../Struts2/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_6.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../Struts2/.idea/libraries/Maven__org_apache_logging_log4j_log4j_api_2_8_2.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../Struts2/.idea/libraries/Maven__org_apache_struts_struts2_core_2_5_13.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../Struts2/.idea/libraries/Maven__org_freemarker_freemarker_2_3_23.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../Struts2/.idea/libraries/Maven__org_javassist_javassist_3_20_0_GA.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../Struts2/.idea/misc.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../Struts2/.idea/modules.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../Struts2/.idea/workspace.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../Struts2/Struts2.iml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../Struts2/pom.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../Struts2/src/main/java/actions/Connect.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../Struts2/src/main/java/actions/Deconnect.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../Struts2/src/main/java/actions/Environment.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../Struts2/src/main/resources/inter.properties" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../Struts2/src/main/resources/struts.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../Struts2/src/main/webapp/WEB-INF/views/connexion.jsp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../Struts2/src/main/webapp/WEB-INF/views/menu.jsp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../Struts2/src/main/webapp/WEB-INF/web.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../Struts2/target/classes/inter.properties" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../Struts2/target/classes/struts.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../Struts2/target/qcmStruts-1.0-SNAPSHOT/META-INF/MANIFEST.MF" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../Struts2/target/qcmStruts-1.0-SNAPSHOT/WEB-INF/classes/inter.properties" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../Struts2/target/qcmStruts-1.0-SNAPSHOT/WEB-INF/classes/struts.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../Struts2/target/qcmStruts-1.0-SNAPSHOT/WEB-INF/lib/commons-fileupload-1.3.3.jar" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../Struts2/target/qcmStruts-1.0-SNAPSHOT/WEB-INF/lib/commons-io-2.5.jar" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../Struts2/target/qcmStruts-1.0-SNAPSHOT/WEB-INF/lib/commons-lang3-3.6.jar" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../Struts2/target/qcmStruts-1.0-SNAPSHOT/WEB-INF/lib/freemarker-2.3.23.jar" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../Struts2/target/qcmStruts-1.0-SNAPSHOT/WEB-INF/lib/javassist-3.20.0-GA.jar" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../Struts2/target/qcmStruts-1.0-SNAPSHOT/WEB-INF/lib/log4j-api-2.8.2.jar" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../Struts2/target/qcmStruts-1.0-SNAPSHOT/WEB-INF/lib/ognl-3.1.15.jar" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../Struts2/target/qcmStruts-1.0-SNAPSHOT/WEB-INF/lib/struts2-core-2.5.13.jar" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../Struts2/target/qcmStruts-1.0-SNAPSHOT/WEB-INF/web.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/modeleQCM.iml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
+      <change beforePath="$PROJECT_DIR$/target/modeleQCM-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/target/modeleQCM-1.0-SNAPSHOT.jar" />
+      <change beforePath="$PROJECT_DIR$/../servlet0/.idea/vcs.xml" afterPath="$PROJECT_DIR$/../Struts2/.idea/vcs.xml" />
+      <change beforePath="$PROJECT_DIR$/../servlet0/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../servlet0/.idea/workspace.xml" />
+    </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -10,45 +62,8 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="Questionnaire.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/modele/Questionnaire.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GestionQCM.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/facade/GestionQCM.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="320">
-              <caret line="91" column="20" lean-forward="true" selection-start-line="91" selection-start-column="20" selection-end-line="91" selection-end-column="20" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="QuestionReponse.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/modele/QuestionReponse.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="88">
-              <caret line="4" column="10" lean-forward="false" selection-start-line="4" selection-start-column="9" selection-end-line="4" selection-end-column="10" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
-  </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>next</find>
-      <find>choix</find>
-    </findStrings>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
   <component name="GradleLocalSettings">
     <option name="externalProjectsViewState">
@@ -62,11 +77,12 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="4">
-    <option name="x" value="54" />
+    <option name="x" value="1307" />
     <option name="y" value="30" />
     <option name="width" value="1253" />
     <option name="height" value="1410" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
       <flattenPackages />
@@ -82,12 +98,21 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
+      <pane id="Scope" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="modeleQCM" type="b2602c69:ProjectViewProjectNode" />
               <item name="modeleQCM" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="modeleQCM" type="b2602c69:ProjectViewProjectNode" />
+              <item name="modeleQCM" type="462c0819:PsiDirectoryNode" />
+              <item name=".idea" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="modeleQCM" type="b2602c69:ProjectViewProjectNode" />
@@ -118,24 +143,12 @@
             <path>
               <item name="modeleQCM" type="b2602c69:ProjectViewProjectNode" />
               <item name="modeleQCM" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="modele" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="modeleQCM" type="b2602c69:ProjectViewProjectNode" />
-              <item name="modeleQCM" type="462c0819:PsiDirectoryNode" />
               <item name="target" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scratches" />
-      <pane id="AndroidView" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -246,20 +259,20 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="f4e6e6ff-a377-4a86-bd8d-665ce6602a25" name="Default" comment="" />
-      <created>1518123772193</created>
+      <changelist id="c67cd329-d5ee-4c7f-83dd-ab4c13ae41e8" name="Default" comment="" />
+      <created>1518545917055</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1518123772193</updated>
-      <workItem from="1518123774849" duration="5044000" />
+      <updated>1518545917055</updated>
+      <workItem from="1518545920327" duration="25000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5044000" />
+    <option name="totallyTimeSpent" value="25000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="54" y="30" width="1253" height="1410" extended-state="4" />
+    <frame x="1307" y="30" width="1253" height="1410" extended-state="4" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -269,11 +282,11 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25692695" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24937028" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Learn" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -296,40 +309,9 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
-  <component name="VcsManagerConfiguration">
-    <ignored-roots>
-      <path value="$PROJECT_DIR$/../.." />
-    </ignored-roots>
-  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
-  </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/modele/Questionnaire.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/modele/QuestionReponse.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="4" column="10" lean-forward="false" selection-start-line="4" selection-start-column="9" selection-end-line="4" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/facade/GestionQCM.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="91" column="20" lean-forward="true" selection-start-line="91" selection-start-column="20" selection-end-line="91" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
   </component>
   <component name="masterDetails">
     <states>

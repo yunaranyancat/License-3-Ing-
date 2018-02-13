@@ -18,8 +18,8 @@ Extensions :
 
 //
 **CORRECTION**
-1. le client fait unde demande aupres du vendeur pour l'achat d'un vehicule
-2. le vendeur demande à creer unde proposition de vente
+1. le client fait une demande aupres du vendeur pour l'achat d'un vehicule
+2. le vendeur demande à creer une proposition de vente
 3. le sys. demande les infos du client
 4. le vendeur renseigne le nom et le prenom du client
 5. le systeme recherche les clients ayant ce nom et prenom et les affice
@@ -47,3 +47,5 @@ Extension:
 
 9b. le systeme ne trouve aucun vehicule d'occassion correpondant au modele
    1. le systeme affiche un message
+
+

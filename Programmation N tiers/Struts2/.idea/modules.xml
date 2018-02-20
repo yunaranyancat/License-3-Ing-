@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Struts2.iml" filepath="$PROJECT_DIR$/Struts2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/qcmStruts.iml" filepath="$PROJECT_DIR$/qcmStruts.iml" />
     </modules>
   </component>
 </project>

@@ -9,9 +9,13 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Le Menu</title>
+    <title><s:text name="menu.pageTitle"></s:text></title>
 </head>
 <body>
-<s:a href="/deconnect">Deconnexion</s:a>
+<s:a action="choixQCM"><s:text name="menu.choixQCM"/></s:a><br>
+
+<s:a action="historique"><s:text name="menu.histoQCM"/></s:a><br>
+
+<s:a action="deconnect"><s:text name="menu.deconnect"/></s:a><br>
 </body>
 </html>

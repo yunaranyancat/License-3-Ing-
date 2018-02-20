@@ -33,6 +33,38 @@
 
         </action>
 
+        <action name="choixQCM" class="actions.ChoixQCM">
+            <result>
+                /WEB-INF/views/choixQCM.jsp
+            </result>
+
+        </action>
+
+        <action name="historique" class="actions.HistoriqueQCM">
+            <result>
+                /WEB-INF/views/historiqueQCM.jsp
+            </result>
+        </action>
+
+        <action name="repondreQCM" class="actions.RepondreQCM">
+            <result>
+                /WEB-INF/views/repondreQCM.jsp
+            </result>
+
+        </action>
+
+        <action name="detailCorrection" class="actions.DetailCorrection">
+            <result>
+                /WEB-INF/views/detailCorrection.jsp
+            </result>
+        </action>
+
+        <action name="validerQuestion" class="">
+            <result>
+                /WEB-INF/views/
+            </result>
+        </action>
+
     </package>
 
 </struts>

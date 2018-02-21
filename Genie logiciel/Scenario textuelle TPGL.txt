@@ -22,7 +22,7 @@ Extensions :
 2. le vendeur demande à creer une proposition de vente
 3. le sys. demande les infos du client
 4. le vendeur renseigne le nom et le prenom du client
-5. le systeme recherche les clients ayant ce nom et prenom et les affice
+5. le systeme recherche les clients ayant ce nom et prenom et les affiche
 6. le vendeur selectionne un client
 7. le syst demande le modele de vehicule et s'il agit un v neuf ou d'occ
 8. le vendeur choisit le modele et le type de v
@@ -31,19 +31,19 @@ Extensions :
 11. le syst calcule le prix et affiche la proposition.
 12. le vendeur valide la proposition
 13. le syst enregistre la proposition
-14. le vendeur demande limpression de ma proposition
+14. le vendeur demande limpression de la proposition
 15. le systeme imprime la proposition
 
 Extension:
 5a. le systeme ne trouve aucun client enregistre
    1- le systeme demande les infos pour enregistrer le client(addr,tel)
    2- le vendeur renseigne les infos
-   3 - le systeme enregitre le client
+   3 - le systeme enregistre le client
     3a. tous les champs obligatoires ne sont pas renseignés.
         1 le systeme affiche un message et revient au point 1
 
 9a. le systeme ne trouve auucn vehicule neuf correspondant au modele
-  1. le scenario se pursusit au point 11 du scenario nominal
+  1. le systeme affiche un message
 
 9b. le systeme ne trouve aucun vehicule d'occassion correpondant au modele
    1. le systeme affiche un message

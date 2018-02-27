@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"
+        "http://struts.apache.org/dtds/struts-2.5.dtd">
+<struts>
+    <constant name="struts.devMode" value="true" />
+    <constant name="struts.enable.DynamicMethodInvocation" value="false"/>
+    <constant name="struts.custom.i18n.resources" value="inter"/>
+
+    <package name="/" extends="struts-default">
+
+        <default-action-ref name="login"/>
+
+        <action name="login">
+            <result>
+                /WEB-INF/views/connexion.jsp
+            </result>
+        </action>
+
+        <action name="connect" class="actions.Connect">
+            <result name="input">
+                /WEB-INF/views/connexion.jsp
+            </result>
+            <result>
+                /WEB-INF/views/menu.jsp
+            </result>
+        </action>
+
+        <action name="commencer" class="actions.Commencer">
+            <result>
+                /WEB-INF/views/jeux.jsp
+            </result>
+        </action>
+
+        <action name="connect" class="actions.Connect">
+            <result name="input">
+                /WEB-INF/views/connexion.jsp
+            </result>
+            <result>
+                /WEB-INF/views/menu.jsp
+            </result>
+        </action>
+
+    </package>
+
+</struts>

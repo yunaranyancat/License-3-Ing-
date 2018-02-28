@@ -1,0 +1,16 @@
+Creer un nouveau projet maven
+1. New Project
+2. Maven --> Next
+3. ecrire des choses
+4. pom.xml -> confluence
+5. Maven project -> Reimport
+6. File->Project Structure-> Module -> NomProject -> Web -> Deployment Descriptors -> + -> web.xml -> Apply -> confluence
+7. Creation automatique de webapp et WEB INF, mettre WEB-INF dans webapp
+8. resources -> new -> xml configuration file -> struts config -> struts.xml -> confluence
+9. Tomcat -> local server -> choisir fichier tomcat
+
+Utiliser la modele téléchargée
+1. pom.xml
+2. Maven Projects -> Lifecycle -> install
+
+Dans le projet maven, reimport

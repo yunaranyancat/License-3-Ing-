@@ -1,5 +1,6 @@
 package actions;
 
+import modele.Case;
 import modele.exceptions.ExceptionLoginDejaPris;
 
 public class Connect extends Environment {
@@ -14,10 +15,12 @@ public class Connect extends Environment {
             return INPUT;
         }
         //Enregistrer en session le login
-        //session.put("login",login);
+
 
         return SUCCESS;
     }
+
+    public Case[][] getPlateau(){return model.getPlateau(login).getMonPlateau();}
 
     @Override
     public void validate() {

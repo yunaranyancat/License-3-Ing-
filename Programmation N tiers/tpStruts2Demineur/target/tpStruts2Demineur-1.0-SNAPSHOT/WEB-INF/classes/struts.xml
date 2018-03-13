@@ -41,6 +41,12 @@
             </result>
         </action>
 
+        <action name="deconnect" class="actions.Deconnect">
+            <result>
+                /WEB-INF/views/connexion.jsp
+            </result>
+        </action>
+
     </package>
 
 </struts>

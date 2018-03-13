@@ -15,6 +15,7 @@ public class Connect extends Environment {
             return INPUT;
         }
         //Enregistrer en session le login
+        session.put("login",login);
 
 
         return SUCCESS;

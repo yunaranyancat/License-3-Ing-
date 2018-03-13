@@ -12,7 +12,26 @@
     <title><s:text name="jeux.pageTitle"/></title>
 </head>
 <body>
-A vous de jouer!
-<s:property value="%{Plateau}"/>
+<%--A vous de jouer!--%>
+Choisir une casezaaa : <br>
+
+<table>
+    <s:iterator value="%{plateau}" var="monPlateau" status="x">
+        <tr>
+            hello
+            <s:iterator var="maCase" value="#monPlateau" status="y">
+                <td>
+                    <s:if test="#maCase.cachee">
+                        <s:url action="jouer" var="url"></s:url>
+                        <s:a href="%{url}">?</s:a>
+                    </s:if>
+                    <s:else>
+                        <s:property value="#maCase.valeur"/>
+                    </s:else>
+                </td>
+            </s:iterator>
+        </tr>
+    </s:iterator>
+</table>
 </body>
 </html>

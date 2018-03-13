@@ -1,0 +1,59 @@
+<argo version="6">
+  <documentation>
+    <authorname></authorname>
+    <authoremail></authoremail>
+    <version>0.34</version>
+    <description>
+      
+    </description>
+  </documentation>
+  <settings>
+    <notationlanguage>UML 1.4</notationlanguage>
+    <showboldnames>false</showboldnames>
+    <useguillemots>false</useguillemots>
+    <showassociationnames>true</showassociationnames>
+    <showvisibility>false</showvisibility>
+    <showmultiplicity>false</showmultiplicity>
+    <showinitialvalue>false</showinitialvalue>
+    <showproperties>false</showproperties>
+    <showtypes>true</showtypes>
+    <showstereotypes>false</showstereotypes>
+    <showsingularmultiplicities>true</showsingularmultiplicities>
+    <defaultshadowwidth>1</defaultshadowwidth>
+    <hidebidirectionalarrows>true</hidebidirectionalarrows>    
+    <fontname>Dialog</fontname>
+    <fontsize>12</fontsize>
+    <defaultstereotypeview>0</defaultstereotypeview>
+    <activediagram>Sequence Diagram</activediagram>
+  </settings>
+  <searchpath href="PROJECT_DIR" />
+  <members>
+    <member type="profile"
+            name="TP Genie Logiciel_profile.profile" />
+    <member type="xmi"
+            name="TP Genie Logiciel.xmi" />
+    <member type="pgml"
+            name="TP Genie Logiciel_ClassDiagram.pgml"
+            diagramclass="org.argouml.uml.diagram.static_structure.ui.UMLClassDiagram"
+            diagramname="Class Diagram" />
+    <member type="pgml"
+            name="TP Genie Logiciel_UseCaseDiagram2.pgml"
+            diagramclass="org.argouml.uml.diagram.use_case.ui.UMLUseCaseDiagram"
+            diagramname="Use Case Diagram 2" />
+    <member type="pgml"
+            name="TP Genie Logiciel_ClassDiagram3.pgml"
+            diagramclass="org.argouml.uml.diagram.static_structure.ui.UMLClassDiagram"
+            diagramname="Class Diagram 3" />
+    <member type="pgml"
+            name="TP Genie Logiciel_ClassDiagram4.pgml"
+            diagramclass="org.argouml.uml.diagram.static_structure.ui.UMLClassDiagram"
+            diagramname="Class Diagram 4" />
+    <member type="pgml"
+            name="TP Genie Logiciel_SequenceDiagram.pgml"
+            diagramclass="org.argouml.sequence2.diagram.UMLSequenceDiagram"
+            diagramname="Sequence Diagram" />
+    <member type="todo"
+            name="TP Genie Logiciel.todo" />
+  </members>
+  <historyfile name="" />
+</argo>

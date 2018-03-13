@@ -12,7 +12,7 @@ public abstract class Environment extends ActionSupport implements ApplicationAw
     protected GestionDemineur model;
     protected Map session;
 
-    protected String login;;
+    protected String login;
 
     public void setLogin(String login){this.login = login;}
 
@@ -26,7 +26,10 @@ public abstract class Environment extends ActionSupport implements ApplicationAw
     }
 
     @Override
-    public void setSession(Map<String, Object> session) {
+    public void setSession(Map<String, Object> map) {
+        session = map;
 
     }
+
+    public GestionDemineur getFacade(){return model;}
 }

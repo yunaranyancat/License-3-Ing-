@@ -10,12 +10,13 @@ public class Connect extends Environment {
 
         try {
             model.connexion(login);
+            session.put("login",login);
         } catch (ExceptionLoginDejaPris e) {
             addFieldError("login",getText("connect.errLoginDejaPris"));
             return INPUT;
         }
         //Enregistrer en session le login
-        session.put("login",login);
+
 
 
         return SUCCESS;

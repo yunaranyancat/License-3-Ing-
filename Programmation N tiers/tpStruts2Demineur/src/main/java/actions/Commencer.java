@@ -8,16 +8,21 @@ import modele.exceptions.BombeException;
 public class Commencer extends Environment {
 
     //private static int DEFAULT_SIZE = 6;
-    private Plateau plateau;
 
-    public Plateau getPlateau(){
-        return plateau;
+
+    @Override
+    public GestionDemineur getFacade() {
+        return super.getFacade();
+    }
+
+    public String getString() {
+        return getFacade().getPlateau((String) session.get(login)).getMonPlateau().toString();
     }
 
     @Override
     public String execute(){
         try {
-            Plateau monPlateau = getFacade().getPlateau(login);
+            Plateau monPlateau = getFacade().getPlateau((String) session.get(login));
             for (int i = 0; i < monPlateau.getMonPlateau().length; i++) {
                 for (int j = 0; j < monPlateau.getMonPlateau().length; j++) {
                     monPlateau.decouvrirCase(i, j);

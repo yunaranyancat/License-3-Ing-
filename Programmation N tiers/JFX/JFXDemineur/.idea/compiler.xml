@@ -6,11 +6,11 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="JFXDemineur" />
+        <module name="fr.orleans.miage.tp" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="JFXDemineur" target="1.8" />
+      <module name="fr.orleans.miage.tp" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

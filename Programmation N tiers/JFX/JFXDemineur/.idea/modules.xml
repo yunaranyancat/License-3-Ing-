@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/JFXDemineur.iml" filepath="$PROJECT_DIR$/JFXDemineur.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fr.orleans.miage.tp.iml" filepath="$PROJECT_DIR$/fr.orleans.miage.tp.iml" />
     </modules>
   </component>
 </project>

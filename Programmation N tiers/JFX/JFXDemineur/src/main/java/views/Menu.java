@@ -17,7 +17,7 @@ public class Menu {
 
 
     public static Menu creerInstance(Controleur c){
-        URL location = Login.class.getResource("/views/menu.fxml");
+        URL location = Menu.class.getResource("/views/menu.fxml");
         FXMLLoader fxmlLoader = new FXMLLoader(location);
         Parent root = null;
         try{

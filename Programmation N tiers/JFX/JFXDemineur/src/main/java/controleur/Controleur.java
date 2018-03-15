@@ -1,4 +1,5 @@
 package controleur;
+import modele.GestionDemineur;
 import views.Login;
 import views.Menu;
 
@@ -9,8 +10,7 @@ public class Controleur {
 
 
     public Controleur(){
-        this.login = Login.creerInstance(this);
-        this.menu = Menu.creerInstance(this);
+
     }
 
 

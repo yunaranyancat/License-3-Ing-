@@ -19,9 +19,16 @@ import java.net.URL;
 public class Login {
 
     private Controleur monControleur;
+    private Stage primaryStage;
+
     protected GestionDemineur modele =  new GestionDemineur();
 
     public void setMonControleur(Controleur monControleur){this.monControleur = monControleur;}
+
+    public void setPrimaryStage(Stage primaryStage){
+        this.primaryStage = primaryStage;
+
+    }
 
     @FXML
     private Button boutonLogin;
@@ -32,7 +39,7 @@ public class Login {
     @FXML
     private Label labelLogin;
 
-    public static Login creerInstance(Controleur c){
+    public static Login creerInstance(Controleur c, Stage primaryStage){
         URL location = Login.class.getResource("/views/login.fxml");
         FXMLLoader fxmlLoader = new FXMLLoader(location);
         Parent root = null;
@@ -43,7 +50,6 @@ public class Login {
             e.printStackTrace();
         }
         Login login = fxmlLoader.getController();
-        Stage primaryStage = new Stage();
         primaryStage.setTitle("Page de connexion");
         primaryStage.setScene(new Scene(root, 300, 300));
         primaryStage.show();
@@ -52,12 +58,20 @@ public class Login {
     }
 
     public void connexion(ActionEvent actionEvent){
+        URL location = Login.class.getResource("/views/login.fxml");
+        FXMLLoader fxmlLoader = new FXMLLoader(location);
+        Parent root = null;
         try {
             modele.connexion(this.champLogin.getText());
+            root = (Parent) fxmlLoader.load();
+            primaryStage.setScene(new Scene(root, 300, 300));
+
         } catch (ExceptionLoginDejaPris e) {
             e.printStackTrace();
             setMonLabel("Login deja pris!");
 
+        } catch (IOException e){
+            e.printStackTrace();
         }
 
     }
